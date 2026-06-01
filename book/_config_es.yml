@@ -3,11 +3,11 @@ title: |
   electrónicos mediante
   código y asistentes de
   Inteligencia Artificial
-author: Álvaro Lozano Murciego y André Sales Mendes
+author: Alberto Almena Ruiz
 copyright: "2026"
 logo: "_static/logo.png"
 language: es
-exclude_patterns: ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints", "_build_*", "en/", "temp_build_*", "latex_templates*", "_TRASH*"]
+exclude_patterns: ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints", "_build_*", "en/", "temp_build_*", "latex_templates*", "_TRASH*", "_archive/"]
 execute:
   execute_notebooks: off
 parse:
@@ -50,7 +50,7 @@ latex_docclass:
 latex:
   latex_engine: xelatex
   options: "spanish"
-  subtitle: "Curso para las Facultades de Ciencias y de Ciencias Químicas"    # Opcional: subtítulo del libro
+  subtitle: ""
   header_title: |
     Elaboración de libros electrónicos
     con código e IA
