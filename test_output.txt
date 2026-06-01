@@ -1,0 +1,309 @@
+Iniciando prueba de Popen...
+Lanzando build_book.py...
+Leyendo stdout...
+LINE: 📚 Iniciando proceso de construcción multi-idioma...
+LINE: 🔍 Idiomas detectados: ['en', 'es']
+LINE: 🌍 Archivo de idiomas generado en: book\_static\languages.json
+LINE: 
+LINE: 🔨 Construyendo versión STANDALONE: EN...
+LINE: 📂 Preparando entorno standalone en: C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en
+LINE: 📂 Copiando contenido de 'en' a carpeta interna para mantener rutas...
+LINE: 🔧 Configuración saneada (excludes minimos seguros) en: C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en\_config.yml
+LINE: 📚 Bibliografía en: 65 cita(s), 51 clave(s) usadas.
+LINE: 🚀 Ejecutando build STANDALONE (en) (1/3): .venv\Scripts\jupyter-book.exe build C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en --config C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en\_config.yml --all -v
+LINE:    ✅ Build STANDALONE (en) completado. Log completo: C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\.build_logs\html-20260525-191245.log
+LINE: 🔧 Corrigiendo rutas del botón PDF en C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en\_build\html\en...
+LINE: 🚚 Moviendo de C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en\_build\html\en a book\_build\html\en
+LINE: ✅ Versión en movida correctamente.
+LINE:    🔧 Removed duplicated Thebe script in 90_about.html
+LINE:    🔧 Removed duplicated Thebe script in 91_licenses.html
+LINE:    🔧 Removed duplicated Thebe script in 92_how_to_cite.html
+LINE:    🔧 Removed duplicated Thebe script in 93_bibliography.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in 01_what_is_a_teachbook.html
+LINE:    🔧 Removed duplicated Thebe script in 02_workflow.html
+LINE:    🔧 Removed duplicated Thebe script in 03_ai_editing.html
+LINE:    🔧 Removed duplicated Thebe script in 04_my_first_book_in_5_minutes.html
+LINE:    🔧 Removed duplicated Thebe script in 05_x_as_code_philosophy.html
+LINE:    🔧 Removed duplicated Thebe script in concentration_gradient.html
+LINE:    🔧 Removed duplicated Thebe script in flow_diagram.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in mccabe_thiele.html
+LINE:    🔧 Removed duplicated Thebe script in moody_chart.html
+LINE:    🔧 Removed duplicated Thebe script in recycle_fsolve.html
+LINE:    🔧 Removed duplicated Thebe script in buffer_ph_curve.html
+LINE:    🔧 Removed duplicated Thebe script in interactive_ir_spectrum.html
+LINE:    🔧 Removed duplicated Thebe script in interactive_periodic_table.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in michaelis_menten.html
+LINE:    🔧 Removed duplicated Thebe script in nernst_equation.html
+LINE:    🔧 Removed duplicated Thebe script in algorithm_complexity.html
+LINE:    🔧 Removed duplicated Thebe script in er_diagram_mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in kroki_diagrams.html
+LINE:    🔧 Removed duplicated Thebe script in uml_class_diagram_mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in rock_cycle_mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in stratigraphic_column.html
+LINE:    🔧 Removed duplicated Thebe script in topographic_profile.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in linear_transformations.html
+LINE:    🔧 Removed duplicated Thebe script in math_example.html
+LINE:    🔧 Removed duplicated Thebe script in newtons_method.html
+LINE:    🔧 Removed duplicated Thebe script in quadratic_equation.html
+LINE:    🔧 Removed duplicated Thebe script in unit_distances.html
+LINE:    🔧 Removed duplicated Thebe script in advanced_circuitikz.html
+LINE:    🔧 Removed duplicated Thebe script in harmonic_oscillator.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in kroki_diagrams.html
+LINE:    🔧 Removed duplicated Thebe script in ohms_law_fit.html
+LINE:    🔧 Removed duplicated Thebe script in physics_example.html
+LINE:    🔧 Removed duplicated Thebe script in rc_circuit_schemdraw.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in linear_regression.html
+LINE:    🔧 Removed duplicated Thebe script in monte_carlo_pi.html
+LINE:    🔧 Removed duplicated Thebe script in statistics_questions.html
+LINE:    🔧 Removed duplicated Thebe script in stats_example.html
+LINE:    🔧 Removed duplicated Thebe script in biology_logistic_growth.html
+LINE:    🔧 Removed duplicated Thebe script in chemical_engineering_balance.html
+LINE:    🔧 Removed duplicated Thebe script in education_rubric_sequence.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in language_glossary_frequency.html
+LINE:    🔧 Removed duplicated Thebe script in medicine_simulated_data.html
+LINE:    🔧 Removed duplicated Thebe script in psychology_likert_questionnaire.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in admonitions_dropdowns.html
+LINE:    🔧 Removed duplicated Thebe script in citations_bibliography.html
+LINE:    🔧 Removed duplicated Thebe script in code.html
+LINE:    🔧 Removed duplicated Thebe script in cross_references.html
+LINE:    🔧 Removed duplicated Thebe script in equations.html
+LINE:    🔧 Removed duplicated Thebe script in figures.html
+LINE:    🔧 Removed duplicated Thebe script in html_pdf_compatibility.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in myst_markdown.html
+LINE:    🔧 Removed duplicated Thebe script in tables.html
+LINE:    🔧 Removed duplicated Thebe script in tabs_cards.html
+LINE:    🔧 Removed duplicated Thebe script in videos.html
+LINE:    🔧 Removed duplicated Thebe script in exercises_with_solution.html
+LINE:    🔧 Removed duplicated Thebe script in h5p_optional.html
+LINE:    🔧 Removed duplicated Thebe script in interactive_html.html
+LINE:    🔧 Removed duplicated Thebe script in interactive_notebooks.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in jupyterquiz_quizzes.html
+LINE:    🔧 Removed duplicated Thebe script in parametric_questions.html
+LINE:    🔧 Removed duplicated Thebe script in thebe_pyodide.html
+LINE:    🔧 Removed duplicated Thebe script in widgets.html
+LINE:    🔧 Removed duplicated Thebe script in github_pages.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in own_server.html
+LINE: 📋 Copied search.html to book\_build\html\en
+LINE:    🔧 Fixed asset paths in search.html
+LINE: 📋 Copied genindex.html to book\_build\html\en
+LINE:    🔧 Fixed asset paths in genindex.html
+LINE: 📋 Copied searchindex.js to book\_build\html\en
+LINE:    🔧 Fixed searchindex.js: stripped 'en/' prefix from all paths
+LINE: 📦 Merging theme assets from temp build (en) to global _static...
+LINE:    🔍 Source _static content (C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en\_build\html\_static):
+LINE:       - basic.css
+LINE:       - check-solid.svg
+LINE:       - clipboard.min.js
+LINE:       - copy-button.svg
+LINE:       - copybutton.css
+LINE:       - copybutton.js
+LINE:       - copybutton_funcs.js
+LINE:       - custom.css
+LINE:       - custom.js
+LINE:       - design-tabs.js
+LINE:       - doctools.js
+LINE:       - documentation_options.js
+LINE:       - file.png
+LINE:       - generated
+LINE:       - images
+LINE:       - languages.json
+LINE:       - language_data.js
+LINE:       - locales
+LINE:       - logo.png
+LINE:       - minus.png
+LINE:       - mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css
+LINE:       - play-solid.svg
+LINE:       - plus.png
+LINE:       - pygments.css
+LINE:       - references.bib
+LINE:       - sbt-webpack-macros.html
+LINE:       - scripts
+LINE:       - searchtools.js
+LINE:       - sphinx-design.min.css
+LINE:       - sphinx-thebe.css
+LINE:       - sphinx-thebe.js
+LINE:       - sphinx_highlight.js
+LINE:       - styles
+LINE:       - teachbook_en.pdf
+LINE:       - teachbook_es.pdf
+LINE:       - togglebutton.css
+LINE:       - togglebutton.js
+LINE:       - tutorial_gifs
+LINE:       - usal_logo.png
+LINE:       - vendor
+LINE:       - webpack-macros.html
+LINE:    🔄 Merging 'C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en\_build\html\_static' -> 'book\_build\html\_static'
+LINE:    ✅ Merge complete. Final _static count: 41
+LINE: 🖼️  Merging document images from temp build (en) to global _images...
+LINE:    🔄 Merging 'C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_en\_build\html\_images' -> 'book\_build\html\_images'
+LINE: 
+LINE: 🔨 Construyendo versión STANDALONE: ES...
+LINE: 📂 Preparando entorno standalone en: C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es
+LINE: 📂 Copiando contenido de 'es' a carpeta interna para mantener rutas...
+LINE: 🔧 Configuración saneada (excludes minimos seguros) en: C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es\_config.yml
+LINE: 📚 Bibliografía es: 65 cita(s), 51 clave(s) usadas.
+LINE: 🚀 Ejecutando build STANDALONE (es) (1/3): .venv\Scripts\jupyter-book.exe build C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es --config C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es\_config.yml --all -v
+LINE:    ✅ Build STANDALONE (es) completado. Log completo: C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\.build_logs\html-20260525-191348.log
+LINE: 🔧 Corrigiendo rutas del botón PDF en C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es\_build\html\es...
+LINE: 🚚 Moviendo de C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es\_build\html\es a book\_build\html\es
+LINE: ✅ Versión es movida correctamente.
+LINE:    🔧 Removed duplicated Thebe script in 90_acerca_de.html
+LINE:    🔧 Removed duplicated Thebe script in 91_licencias.html
+LINE:    🔧 Removed duplicated Thebe script in 92_como_citar.html
+LINE:    🔧 Removed duplicated Thebe script in 93_bibliografia.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in 01_que_es_un_teachbook.html
+LINE:    🔧 Removed duplicated Thebe script in 02_flujo_trabajo.html
+LINE:    🔧 Removed duplicated Thebe script in 03_edicion_con_ia.html
+LINE:    🔧 Removed duplicated Thebe script in 04_mi_primer_libro_en_5_minutos.html
+LINE:    🔧 Removed duplicated Thebe script in 05_filosofia_algo_como_codigo.html
+LINE:    🔧 Removed duplicated Thebe script in ejemplo_estadistica.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in monte_carlo_pi.html
+LINE:    🔧 Removed duplicated Thebe script in preguntas_estadistica.html
+LINE:    🔧 Removed duplicated Thebe script in regresion_lineal.html
+LINE:    🔧 Removed duplicated Thebe script in circuitikz_avanzado.html
+LINE:    🔧 Removed duplicated Thebe script in circuitos_schemdraw.html
+LINE:    🔧 Removed duplicated Thebe script in diagramas_kroki.html
+LINE:    🔧 Removed duplicated Thebe script in ejemplo_fisica.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in ley_ohm_ajuste.html
+LINE:    🔧 Removed duplicated Thebe script in oscilador_armonico.html
+LINE:    🔧 Removed duplicated Thebe script in ciclo_rocas_mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in columna_estratigrafica.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in perfil_topografico.html
+LINE:    🔧 Removed duplicated Thebe script in complejidad_algoritmica.html
+LINE:    🔧 Removed duplicated Thebe script in diagramas_kroki.html
+LINE:    🔧 Removed duplicated Thebe script in diagrama_er_mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in uml_clases_mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in diagrama_flujo.html
+LINE:    🔧 Removed duplicated Thebe script in gradiente_concentracion.html
+LINE:    🔧 Removed duplicated Thebe script in grafica_moody.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in mccabe_thiele.html
+LINE:    🔧 Removed duplicated Thebe script in recirculacion_fsolve.html
+LINE:    🔧 Removed duplicated Thebe script in distancias_unitarias.html
+LINE:    🔧 Removed duplicated Thebe script in ecuacion_segundo_grado.html
+LINE:    🔧 Removed duplicated Thebe script in ejemplo_matematicas.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in metodo_newton.html
+LINE:    🔧 Removed duplicated Thebe script in transformaciones_lineales.html
+LINE:    🔧 Removed duplicated Thebe script in curva_ph_tampon.html
+LINE:    🔧 Removed duplicated Thebe script in ecuacion_nernst.html
+LINE:    🔧 Removed duplicated Thebe script in espectro_ir_interactivo.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in michaelis_menten.html
+LINE:    🔧 Removed duplicated Thebe script in tabla_periodica_interactiva.html
+LINE:    🔧 Removed duplicated Thebe script in biologia_crecimiento_logistico.html
+LINE:    🔧 Removed duplicated Thebe script in educacion_rubrica_secuencia.html
+LINE:    🔧 Removed duplicated Thebe script in ingenieria_quimica_balance.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in lengua_glosario_frecuencia.html
+LINE:    🔧 Removed duplicated Thebe script in medicina_datos_simulados.html
+LINE:    🔧 Removed duplicated Thebe script in psicologia_cuestionario_likert.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in admonitions_dropdowns.html
+LINE:    🔧 Removed duplicated Thebe script in citas_bibliografia.html
+LINE:    🔧 Removed duplicated Thebe script in codigo.html
+LINE:    🔧 Removed duplicated Thebe script in compatibilidad_html_pdf.html
+LINE:    🔧 Removed duplicated Thebe script in ecuaciones.html
+LINE:    🔧 Removed duplicated Thebe script in figuras.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in mermaid.html
+LINE:    🔧 Removed duplicated Thebe script in myst_markdown.html
+LINE:    🔧 Removed duplicated Thebe script in referencias_cruzadas.html
+LINE:    🔧 Removed duplicated Thebe script in tablas.html
+LINE:    🔧 Removed duplicated Thebe script in tabs_cards.html
+LINE:    🔧 Removed duplicated Thebe script in videos.html
+LINE:    🔧 Removed duplicated Thebe script in ejercicios_con_solucion.html
+LINE:    🔧 Removed duplicated Thebe script in h5p_opcional.html
+LINE:    🔧 Removed duplicated Thebe script in html_interactivo.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in notebooks_interactivos.html
+LINE:    🔧 Removed duplicated Thebe script in preguntas_parametricas.html
+LINE:    🔧 Removed duplicated Thebe script in quizzes_jupyterquiz.html
+LINE:    🔧 Removed duplicated Thebe script in thebe_pyodide.html
+LINE:    🔧 Removed duplicated Thebe script in widgets.html
+LINE:    🔧 Removed duplicated Thebe script in github_pages.html
+LINE:    🔧 Removed duplicated Thebe script in intro.html
+LINE:    🔧 Removed duplicated Thebe script in servidor_propio.html
+LINE: 📋 Copied search.html to book\_build\html\es
+LINE:    🔧 Fixed asset paths in search.html
+LINE: 📋 Copied genindex.html to book\_build\html\es
+LINE:    🔧 Fixed asset paths in genindex.html
+LINE: 📋 Copied searchindex.js to book\_build\html\es
+LINE:    🔧 Fixed searchindex.js: stripped 'es/' prefix from all paths
+LINE: 📦 Merging theme assets from temp build (es) to global _static...
+LINE:    🔍 Source _static content (C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es\_build\html\_static):
+LINE:       - basic.css
+LINE:       - check-solid.svg
+LINE:       - clipboard.min.js
+LINE:       - copy-button.svg
+LINE:       - copybutton.css
+LINE:       - copybutton.js
+LINE:       - copybutton_funcs.js
+LINE:       - custom.css
+LINE:       - custom.js
+LINE:       - design-tabs.js
+LINE:       - doctools.js
+LINE:       - documentation_options.js
+LINE:       - file.png
+LINE:       - generated
+LINE:       - images
+LINE:       - languages.json
+LINE:       - language_data.js
+LINE:       - locales
+LINE:       - logo.png
+LINE:       - minus.png
+LINE:       - mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css
+LINE:       - play-solid.svg
+LINE:       - plus.png
+LINE:       - pygments.css
+LINE:       - references.bib
+LINE:       - sbt-webpack-macros.html
+LINE:       - scripts
+LINE:       - searchtools.js
+LINE:       - sphinx-design.min.css
+LINE:       - sphinx-thebe.css
+LINE:       - sphinx-thebe.js
+LINE:       - sphinx_highlight.js
+LINE:       - styles
+LINE:       - teachbook_en.pdf
+LINE:       - teachbook_es.pdf
+LINE:       - togglebutton.css
+LINE:       - togglebutton.js
+LINE:       - tutorial_gifs
+LINE:       - usal_logo.png
+LINE:       - vendor
+LINE:       - webpack-macros.html
+LINE:    🔄 Merging 'C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es\_build\html\_static' -> 'book\_build\html\_static'
+LINE:    ✅ Merge complete. Final _static count: 41
+LINE: 🖼️  Merging document images from temp build (es) to global _images...
+LINE:    🔄 Merging 'C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\_temp_build_es\_build\html\_images' -> 'book\_build\html\_images'
+LINE:    🔄 Merging 'book\_static' -> 'book\_build\html\_static'
+LINE: 📦 Custom static assets merged into: book\_build\html\_static
+LINE: 🌍 Archivo de idiomas generado en: book\_build\html\_static\languages.json
+LINE: 🔀 Redirección raíz creada apuntando a: /es/
+LINE: 🔍 Root search redirect created.
+LINE: 
+LINE: ✅ ¡Construcción completa!
+LINE: 🌍 Web disponible en: C:\Users\almen\OneDrive\Escritorio\Repositorio curso libro electrónico\mi_primer_libroAA\book\_build\html
+LINE: ✅ Archivo .nojekyll creado para GitHub Pages.
+Build finalizado con return code: 0
+Prueba finalizada.

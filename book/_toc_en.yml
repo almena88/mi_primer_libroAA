@@ -49,6 +49,7 @@ parts:
       - file: en/02_degrees/chemical_engineering_degree/recycle_fsolve
       - file: en/02_degrees/chemical_engineering_degree/concentration_gradient
       - file: en/02_degrees/chemical_engineering_degree/moody_chart
+      - file: en/02_degrees/chemical_engineering_degree/techno_economic_assessment_ice_cream
     - file: en/02_degrees/chemistry_degree/intro
       sections:
       - file: en/02_degrees/chemistry_degree/buffer_ph_curve

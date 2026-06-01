@@ -17,6 +17,17 @@ html {
     margin-right: auto !important;
 }
 
+/* Justify main article text for better readability */
+.bd-main .bd-content .bd-article-container p,
+.bd-main .bd-content .bd-article-container ul,
+.bd-main .bd-content .bd-article-container ol,
+.bd-main .bd-content .bd-article-container dl,
+.bd-main .bd-content .bd-article-container blockquote,
+.bd-main .bd-content .bd-article-container .admonition p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
+
 /* Language Switcher Container */
 .teachbook-lang-container {
     display: inline-block;

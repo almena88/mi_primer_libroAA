@@ -10,6 +10,32 @@ from datetime import datetime
 from pathlib import Path
 
 
+def safe_rmtree(path, retries=5, delay=0.5):
+    """Robustly remove a directory tree, retrying on Windows sharing/lock violations."""
+    if not os.path.exists(path):
+        return
+    for attempt in range(retries):
+        try:
+            # Change permissions in case they are read-only
+            for root, dirs, files in os.walk(path):
+                for f in files:
+                    try:
+                        os.chmod(os.path.join(root, f), 0o666)
+                    except Exception:
+                        pass
+                for d in dirs:
+                    try:
+                        os.chmod(os.path.join(root, d), 0o666)
+                    except Exception:
+                        pass
+            shutil.rmtree(path)
+            return
+        except Exception as e:
+            if attempt == retries - 1:
+                raise e
+            time.sleep(delay)
+
+
 # Fix: Windows cp1252 can't encode emojis — force UTF-8
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
@@ -392,7 +418,7 @@ def build_language(lang):
 
         # Standard build logic for default
         if os.path.exists(build_cache_dir):
-            shutil.rmtree(build_cache_dir)
+            safe_rmtree(build_cache_dir)
 
         cmd = [
             get_jupyter_book(),
@@ -429,7 +455,7 @@ def build_language(lang):
     # Use _temp_build_{lang}
     temp_build_root = os.path.abspath(os.path.join(os.getcwd(), f"_temp_build_{lang}"))
     if os.path.exists(temp_build_root):
-        shutil.rmtree(temp_build_root)
+        safe_rmtree(temp_build_root)
     os.makedirs(temp_build_root)
 
     # 2. Copy localized content AS A SUBFOLDER to keep paths valid (e.g., temp_en/en/intro.md)
@@ -496,7 +522,7 @@ def build_language(lang):
 
         print(f"🚚 Moviendo de {built_html_path_nested} a {final_dest}")
         if os.path.exists(final_dest):
-            shutil.rmtree(final_dest)
+            safe_rmtree(final_dest)
 
         # Ensure parent dir exists
         os.makedirs(os.path.dirname(final_dest), exist_ok=True)
@@ -583,7 +609,7 @@ def build_language(lang):
     finally:
         # Cleanup temp directory
         if os.path.exists(temp_build_root):
-            shutil.rmtree(temp_build_root)
+            safe_rmtree(temp_build_root)
 
 
 def merge_dir_into(src_dir, dst_dir):
@@ -688,7 +714,7 @@ def main():
     # Start from a clean HTML output tree so deleted assets do not survive
     # between builds. The source assets remain in book/_static.
     if os.path.exists(FINAL_HTML_DIR):
-        shutil.rmtree(FINAL_HTML_DIR)
+        safe_rmtree(FINAL_HTML_DIR)
     os.makedirs(FINAL_HTML_DIR)
 
     # Pre-create root _static to avoid race conditions or missing dirs

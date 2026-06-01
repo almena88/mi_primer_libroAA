@@ -49,6 +49,7 @@ parts:
       - file: es/02_grados/grado_ingenieria_quimica/recirculacion_fsolve
       - file: es/02_grados/grado_ingenieria_quimica/gradiente_concentracion
       - file: es/02_grados/grado_ingenieria_quimica/grafica_moody
+      - file: es/02_grados/grado_ingenieria_quimica/evaluacion_tecnoeconmica_helados
     - file: es/02_grados/grado_quimica/intro
       sections:
       - file: es/02_grados/grado_quimica/curva_ph_tampon
