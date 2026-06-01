@@ -6,6 +6,7 @@ import glob
 import shutil
 import json
 import time
+import tempfile
 from datetime import datetime
 from pathlib import Path
 
@@ -451,14 +452,10 @@ def build_language(lang):
     toc_file = f"_toc_{lang}.yml"
     pdf_name = f"teachbook_{lang}.pdf"
 
-    # 1. Create temporary standalone project AT ROOT to avoid recursion/path issues
-    # Use _temp_build_{lang}
-    temp_build_root = os.path.abspath(os.path.join(os.getcwd(), f"_temp_build_{lang}"))
-    if os.path.exists(temp_build_root):
-        safe_rmtree(temp_build_root)
-    os.makedirs(temp_build_root)
+    # 1. Create a unique temporary standalone project AT ROOT to avoid recursion/path issues
+    temp_build_root = tempfile.mkdtemp(prefix=f"_temp_build_{lang}_", dir=os.getcwd())
 
-    # 2. Copy localized content AS A SUBFOLDER to keep paths valid (e.g., temp_en/en/intro.md)
+    # 2. Copy localized content AS A SUBFOLDER to keep paths valid (e.g., temp_en_en/  -> en/intro.md)
     lang_src_dir = os.path.join(BOOK_DIR, lang)
     lang_dst_dir = os.path.join(temp_build_root, lang)
     if not os.path.exists(lang_src_dir):
@@ -469,7 +466,12 @@ def build_language(lang):
 
     print(f"📂 Preparando entorno standalone en: {temp_build_root}")
     print(f"📂 Copiando contenido de '{lang}' a carpeta interna para mantener rutas...")
-    shutil.copytree(lang_src_dir, lang_dst_dir)
+    try:
+        shutil.copytree(lang_src_dir, lang_dst_dir)
+    except PermissionError as exc:
+        print(f"❌ No se pudo copiar '{lang_src_dir}' a '{lang_dst_dir}': {exc}")
+        print("   Asegúrate de que la ruta temporal sea accesible y que no haya archivos bloqueados.")
+        raise
 
     # 3. Copy _static folder (required for logo, css, js)
     static_src = os.path.join(BOOK_DIR, "_static")
