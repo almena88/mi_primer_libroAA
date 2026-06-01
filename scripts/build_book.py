@@ -452,8 +452,11 @@ def build_language(lang):
     toc_file = f"_toc_{lang}.yml"
     pdf_name = f"teachbook_{lang}.pdf"
 
-    # 1. Create a unique temporary standalone project AT ROOT to avoid recursion/path issues
-    temp_build_root = tempfile.mkdtemp(prefix=f"_temp_build_{lang}_", dir=os.getcwd())
+    # 1. Create a unique temporary standalone project in the system temp dir
+    # Using system temp avoids permission issues when the repo tree is read-only in CI.
+    temp_build_root = tempfile.mkdtemp(prefix=f"teachbook_{lang}_")
+    # Log the chosen temp dir for easier debugging in CI logs
+    print(f"   ℹ️ Using temp build root: {temp_build_root}")
 
     # 2. Copy localized content AS A SUBFOLDER to keep paths valid (e.g., temp_en_en/  -> en/intro.md)
     lang_src_dir = os.path.join(BOOK_DIR, lang)
