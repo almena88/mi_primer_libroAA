@@ -4,4 +4,4 @@ parts:
   - caption: Chemical Engineering
     chapters:
     - file: en/02_degrees/chemical_engineering_degree/techno_economic_assessment_ice_cream
-
+    - file: en/bibliografia

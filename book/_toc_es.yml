@@ -4,4 +4,4 @@ parts:
   - caption: Ingeniería Química
     chapters:
     - file: es/02_grados/grado_ingenieria_quimica/evaluacion_tecnoeconmica_helados
-
+    - file: es/bibliografia
