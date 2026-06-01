@@ -26,7 +26,7 @@ def safe_rmtree(path, retries=5, delay=0.5):
                         pass
                 for d in dirs:
                     try:
-                        os.chmod(os.path.join(root, d), 0o666)
+                        os.chmod(os.path.join(root, d), 0o777)
                     except Exception:
                         pass
             shutil.rmtree(path)
